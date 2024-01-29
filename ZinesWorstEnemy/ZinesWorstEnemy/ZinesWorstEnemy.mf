@@ -1,0 +1,2 @@
+SHA1(Stapler.ovf)= dac81db0b0dbafbcdf769b15b01b4e27df17b10d
+SHA1(Stapler-disk1.vmdk)= 794a3d02e5c5f8b3b8804bf5383f20a8b048cd28
