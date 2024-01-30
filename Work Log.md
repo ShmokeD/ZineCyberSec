@@ -17,3 +17,30 @@ titled message2.jpg. Wheres message1?
 I found out there was an open port 139 with a samba 4.3.9 running via nmap. Doing some research about
 possible exploits led me to a is_known_pipename exploit. Using metasploit I was able to get into a VERY basic shell.
 whoami returns root so thats a good sign i think.
+
+30-01-2024 16:35
+Well the shell was very useful. running passwd allowed me to set the password. moreover i can read the flag from here already.
+~~~~~~~~~~<(Congratulations)>~~~~~~~~~~
+                          .-'''''-.
+                          |'-----'|
+                          |-.....-|
+                          |       |
+                          |       |
+         _,._             |       |
+    __.o`   o`"-.         |       |
+ .-O o `"-.o   O )_,._    |       |
+( o   O  o )--.-"`O   o"-.`'-----'`
+ '--------'  (   o  O    o)  
+              `----------`
+b6b545dc11b7a270f4bad23432190c75162c4a2b
+
+30-01-2024 16:40
+seems like the shell is a root shell but I cant see the output that the shell gives. using echo does not return an output.
+I can only see like 1 line i think. I wont consider the project done until i can run simple bash.
+My most easiest method seems to be a trick I learned a while ago to use netcat to listen on a specific port to create a reverse shell.
+Learned from hak5.
+
+30-01-2024 20:25
+well the shell worked. I saw from sudo -l that I could execute binaries that I could execute bins from /usr/sbin. Looking into the directory,
+visudo caught my eye. Learning more about visudo revealed that it opens some file in vi. I knew that i could escelate to a proper bash shell from there.
+And i was right!!! I got a whole bash shell with output returning to me. I used this opportunity to execute the reverse shell command which gave me a backdoor into the system as well.
