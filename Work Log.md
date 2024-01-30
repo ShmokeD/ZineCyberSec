@@ -12,3 +12,8 @@ data on port 666 which I havent been able to decipher.
 I think im getting somewhere. I downloaded the gibberish using wget from port 666. Running file on that showed that 
 it was a zip file. Unzipping which revealed a picture im quite perplexed by. I dont know what to do with it? Its 
 titled message2.jpg. Wheres message1?
+
+30-01-2024 16:29
+I found out there was an open port 139 with a samba 4.3.9 running via nmap. Doing some research about
+possible exploits led me to a is_known_pipename exploit. Using metasploit I was able to get into a VERY basic shell.
+whoami returns root so thats a good sign i think.
