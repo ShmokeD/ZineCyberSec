@@ -44,3 +44,9 @@ Learned from hak5.
 well the shell worked. I saw from sudo -l that I could execute binaries that I could execute bins from /usr/sbin. Looking into the directory,
 visudo caught my eye. Learning more about visudo revealed that it opens some file in vi. I knew that i could escelate to a proper bash shell from there.
 And i was right!!! I got a whole bash shell with output returning to me. I used this opportunity to execute the reverse shell command which gave me a backdoor into the system as well.
+
+03-02-2024 23:08
+This is the final log for the new project I was given. I opened the file using ida and gdb and other debugging/ decompiling tools. I understood
+very little of the stuff at the start. But eventually started to understand how it goes down. The pseudocode helped by IDA helped a lot as well but confused me just as much. Unfortunately,
+my findings were limited by my lack of understanding of what I was doing. I have renamed the functions as I saw fit and also started commenting the code. But two days is too small a time to 
+find anything of meaning out of this.
